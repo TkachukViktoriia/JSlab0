@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css" />
+  </head>
+
+  <body>
+    <script> 
+    'use strict'
+
+    let userName = 'Сергій Володимирович';
+
+    function showMessage() {
+      let message = 'Доброго дня, ' + userName;
+      alert(message);
+    }
+
+    showMessage(); 
+
+    let num1 = +prompt("Введіть довільне число", 0);
+    let num2 = +prompt("Введіть ще одне довільне число", 0);
+    let num3 = +prompt("Введіть третє число на Ваш вибір", 0);
+    let num4 = +prompt("Введіть останнє число", 0);
+    let text = prompt("Введіть текстове значення", "anything");
+    
+    confirm ('Давайте відсортуємо масив?')
+
+    function compareNumeric(a, b) {
+      if (a > b) return 1;
+      if (a == b) return 0;
+      if (a < b) return -1;
+    }
+    
+    let arr = [num1, num2, num3, num4, text];
+    arr.sort(compareNumeric);
+
+    alert(arr);  
+    
+    </script>
+  </body>
+</html>
